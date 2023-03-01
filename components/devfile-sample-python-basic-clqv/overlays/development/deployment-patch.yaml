@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-clqv
+  namespace: aronaldson-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:d81b9c70d5f5becec4f2864c1b34677acc213a68a1c9894bb357e9fb095f2cd1
+        name: my-python
+        resources: {}
+status: {}
