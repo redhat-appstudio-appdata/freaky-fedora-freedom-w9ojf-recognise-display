@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-g7ne
+  namespace: aronaldson-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:ca7d45a4b941c088c58edd409f35d7b7701952237091a5be28b83085eb1a6ce7
+        name: my-java-quarkus
+        resources: {}
+status: {}
